@@ -22,10 +22,25 @@ public class Main {
         product3.setImageUrl("image3.jpg");
 
         Product[] products = {product1, product2, product3};
+/*
 
         for (Product product : products) {
             System.out.println(product.getName());
         }
+*/
 
+        IndividualCustomer individualCustomer = new IndividualCustomer();
+        individualCustomer.setId(1);
+        individualCustomer.setPhone("555 555 5555");
+        individualCustomer.setCustomerNumber("2");
+        individualCustomer.setFirstName("Emre");
+        individualCustomer.setLastName("Güler");
+
+        CorporateCustomer corporateCustomer = new CorporateCustomer();
+        corporateCustomer.setId(1);
+        corporateCustomer.setCompanyName("A Company");
+        corporateCustomer.setPhone("555 555 5500");
+        corporateCustomer.setCustomerNumber("3");
+        corporateCustomer.setTaxNumber("1111111111");
     }
 }
